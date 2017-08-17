@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trootorials</title>
+  </head>
+  <body>
+    <ul>
+    <%
+      videos.forEach(function( singleVideo, index ) {
+        %>
+        <li>
+          Name: <%= singleVideo.name %> </br>
+          Size: <%= singleVideo.size %>
+        </li>
+        <%
+      });
+    %>
+    </ul>
+  </body>
+</html>
